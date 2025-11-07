@@ -1,0 +1,243 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Header and Navigation Bar */
+header {
+  background: #175ec5;
+  color: #fff;
+  padding: 0 0 10px 0;
+}
+header .container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  padding: 16px 0 8px 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+nav {
+  margin-bottom: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+nav a:hover,
+nav a.active {
+  color: #ffb200;
+}
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto 0 auto;
+  background: transparent;
+}
+
+/* About Section */
+#about {
+  background: #f3f7fb;
+  border-radius: 12px;
+  text-align: center;
+  padding: 32px 16px 24px 16px;
+  margin-bottom: 30px;
+}
+.profile-img img {
+  margin: 0 auto 16px auto;
+  border-radius: 50%;
+  background: #cfe2ff;
+  width: 180px;
+  height: 180px;
+  display: block;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+/* Skills Table */
+#skills {
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 24px 12px;
+  margin: 26px auto;
+}
+#skills table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  min-width: 320px;
+  max-width: 400px;
+}
+#skills th,
+#skills td {
+  border: 1px solid #175ec5;
+  padding: 10px 28px;
+}
+#skills th {
+  background: #175ec5;
+  color: #fff;
+  font-weight: 700;
+}
+#skills td {
+  font-size: 1em;
+  background: #f8fafb;
+}
+
+/* Projects Section */
+#projects {
+  padding: 30px 8px;
+  background: #f3f7fb;
+  border-radius: 12px;
+  text-align: center;
+}
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  margin: 13px auto;
+  padding: 16px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(50,100,150,0.05);
+  text-align: center;
+}
+.project-card h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #175ec5;
+}
+.project-card p {
+  margin-top: 6px;
+  font-size: 1em;
+}
+
+/* Contact Section */
+#contact {
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 22px 8px 18px 8px;
+  margin: 30px auto;
+}
+
+/* Contact Table Styles */
+.contact-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 520px;
+  background: #f8fafb;
+  border: 2px solid #175ec5;
+}
+
+.contact-table td {
+  border: 1px solid #b2c6dc;
+  padding: 10px 8px;
+}
+
+.contact-table label {
+  font-weight: 500;
+}
+
+.contact-table input,
+.contact-table textarea {
+  width: 95%;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #bccbde;
+  background: #f5f8fc;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.contact-table textarea {
+  min-height: 44px;
+  resize: vertical;
+}
+
+.contact-table button {
+  background: #175ec5;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 0;
+  font-size: 1em;
+  cursor: pointer;
+  width: 90%;
+  margin-top: 5px;
+  transition: background 0.2s;
+}
+
+.contact-table button:hover {
+  background: #ffb200;
+  color: #13509b;
+}
+
+/* Separator hr */
+hr {
+  border: none;
+  border-top: 1.5px solid #ddd;
+  width: 96%;
+  margin: 32px auto;
+}
+
+/* Footer */
+footer {
+  background: #175ec5;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0 11px 0;
+  border-radius: 0 0 8px 8px;
+  font-size: 1em;
+  margin-top: 36px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #175ec5;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,24,70,0.08);
+  transition: background 0.2s;
+  font-size: 1em;
+  z-index: 999;
+}
+#back-to-top:hover {
+  background: #ffb200;
+  color: #13509b;
+}
+
+/* Responsive */
+@media (max-width: 620px) {
+  main,
+  header .container {
+    width: 99%;
+    padding: 0;
+  }
+  #skills table,
+  .contact-table {
+    min-width: unset;
+    max-width: 99vw;
+  }
+}
